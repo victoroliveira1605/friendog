@@ -19,7 +19,7 @@ public class Dog implements Serializable {
     public Dog() {
     }
 
-    public Dog(Integer id, String dogbreed, String features, String life) {
+    public Dog(Integer id, String dogbreed) {
         super();
         this.id = id;
         this.dogbreed = dogbreed;
@@ -40,7 +40,7 @@ public class Dog implements Serializable {
     public void setDogbreed(String dogbreed) {
         this.dogbreed = dogbreed;
     }
-    
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
