@@ -15,8 +15,6 @@ public class Dog implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String dogbreed;
-    private String features;
-    private String life;
 
     public Dog() {
     }
@@ -25,8 +23,6 @@ public class Dog implements Serializable {
         super();
         this.id = id;
         this.dogbreed = dogbreed;
-        this.features = features;
-        this.life = life;
     }
 
     public Integer getId() {
@@ -44,23 +40,7 @@ public class Dog implements Serializable {
     public void setDogbreed(String dogbreed) {
         this.dogbreed = dogbreed;
     }
-
-    public String getFeatures() {
-        return features;
-    }
-
-    public void setFeatures(String features) {
-        this.features = features;
-    }
-
-    public String getLife() {
-        return life;
-    }
-
-    public void setLife(String life) {
-        this.life = life;
-    }
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
